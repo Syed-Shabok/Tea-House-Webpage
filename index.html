@@ -36,12 +36,19 @@
   <body>
     <head>
       <!-- Banner Section -->
-      <section class="grid grid-cols-1 md:grid-cols-2 w-3/4 mx-auto">
+      <section
+        class="grid grid-cols-1 lg:grid-cols-2 gap-10 w-[90%] lg:w-3/4 mx-auto my-12"
+      >
         <div class="banner-left space-y-[30px]">
-          <h1 class="text-[80px] text-[#1C1C1C] font-bold">
-            It's good <br />tea time at <br />The Tea House
+          <h1
+            class="text-5xl md:text-7xl lg:text-5xl xl:text-7xl md:leading-25 lg:leading-15 xl:leading-25 text-[#1C1C1C] font-extrabold"
+          >
+            It's good <br class="hidden md:block" />tea time at The<br
+              class="hidden md:block"
+            />
+            Tea House
           </h1>
-          <p class="text-[#777777] text-[18px] font-medium">
+          <p class="text-[#777777] md:text-[18px] font-medium">
             Tea and Botanical Solutions Supplier Give <br />Optimum Satisfaction
             To Your Taste Buds.
           </p>
@@ -58,7 +65,7 @@
 
           <!-- Rating Card -->
           <div
-            class="flex items-center justify-center gap-4 absolute py-5 px-6 bg-[#ffffff] rounded-xl shadow-2xl left-[50px] bottom-[15px]"
+            class="scale-65 md:scale-100 lg:scale-75 xl:scale-100 flex items-center justify-center gap-4 absolute py-5 px-6 bg-[#ffffff] rounded-xl shadow-2xl left-[40px] bottom-[15px]"
           >
             <img src="./images/banner-review.png" alt="Icon of review star" />
             <div>
@@ -69,5 +76,62 @@
         </div>
       </section>
     </head>
+
+    <!-- Featured Products Section -->
+    <section class="w-[90%] lg:w-3/4 mx-auto text-center my-20 xl:my-30">
+      <!-- Text Area -->
+      <div class="lg:w-3/4 mx-auto space-y-5 mb-10">
+        <h2 class="text-4xl font-extrabold text-[#1C1C1C]">
+          Our Featured Products
+        </h2>
+        <p class="text-[#777777]">
+          There are many variations of passages of Lorem Ipsum available, but
+          the majority have suffered alteration in some form, by injected
+          humour, or randomised words which don't look even slightly believable.
+        </p>
+      </div>
+      <!-- Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
+        <div
+          class="product-card bg-linear-to-b from-[#F4F4F4] to-[##f4f4f400] w-fit p-10 rounded-lg space-y-3"
+        >
+          <img src="./images/tea-1.png" class="mx-auto" alt="" />
+          <h3 class="font-extrabold text-2xl">Milk Tea</h3>
+          <p class="font-semibold text-[#777777]">
+            Creamer could be replaced by fresh milk
+          </p>
+        </div>
+
+        <div
+          class="product-card bg-linear-to-b from-[#F4F4F4] to-[##f4f4f400] w-fit p-10 rounded-lg space-y-3"
+        >
+          <img src="./images/tea-2.png" class="mx-auto" alt="" />
+          <h3 class="font-extrabold text-2xl">Black Tea</h3>
+          <p class="font-semibold text-[#777777]">
+            Creamer could be replaced by fresh milk
+          </p>
+        </div>
+
+        <div
+          class="product-card bg-linear-to-b from-[#F4F4F4] to-[##f4f4f400] w-fit p-10 rounded-lg space-y-3"
+        >
+          <img src="./images/tea-3.png" class="mx-auto" alt="" />
+          <h3 class="font-extrabold text-2xl">Lemon Tea</h3>
+          <p class="font-semibold text-[#777777]">
+            Creamer could be replaced by fresh milk
+          </p>
+        </div>
+
+        <div
+          class="product-card bg-linear-to-b from-[#F4F4F4] to-[##f4f4f400] w-fit p-10 rounded-lg space-y-3"
+        >
+          <img src="./images/tea-4.png" class="mx-auto" alt="" />
+          <h3 class="font-extrabold text-2xl">Green Tea</h3>
+          <p class="font-semibold text-[#777777]">
+            Creamer could be replaced by fresh milk
+          </p>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
